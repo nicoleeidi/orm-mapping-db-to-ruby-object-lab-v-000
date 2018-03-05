@@ -73,5 +73,3 @@ class Student
         newarray
     end
 end
-
-

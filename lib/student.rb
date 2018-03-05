@@ -62,9 +62,15 @@ class Student
       end
     end
     def self.first_X_students_in_grade_10(x)
-        DB[:conn].execute("SELECT * FROM students WHERE grade = 10").map do |row|
+        array= DB[:conn].execute("SELECT * FROM students WHERE grade = 10").map do |row|
           self.new_from_db(row)
         end
+        i=0
+        until i= x 
+          newarray[i]=array[i]
+          i++
+        end 
+        newarray
     end
 
 

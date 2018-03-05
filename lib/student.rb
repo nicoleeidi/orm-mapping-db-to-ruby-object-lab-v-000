@@ -55,10 +55,12 @@ class Student
     DB[:conn].execute("SELECT * FROM students WHERE grade= 9").map do |row|
       self.new_from_db(row)
     end
-  end 
+  end
     def self.students_below_12th_grade
       DB[:conn].execute("SELECT * FROM students WHERE grade < 9").map do |row|
-    end 
-    
+        self.new_from_db(row)
+      end
+    end
+
   end
 end

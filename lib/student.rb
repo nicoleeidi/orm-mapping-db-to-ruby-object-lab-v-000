@@ -66,13 +66,12 @@ class Student
           self.new_from_db(row)
         end
         i=0
-        until i= x 
+        until i= x
           newarray[i]=array[i]
           i+=1
         end
         newarray
     end
-end 
-
-
 end
+
+

@@ -72,7 +72,7 @@ class Student
         end
         newarray
     end
-
+end 
 
 
 end
